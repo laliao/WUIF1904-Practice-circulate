@@ -6,7 +6,6 @@
  for(let i=100;i<200;i++){
     if((i%3==1)&&(i%4==2)&&(i%5==3)){
         document.write(i)
-        document.write("<br>")
     }
 }
  ```
@@ -16,7 +15,6 @@
  for(let a=0;a<370;a++){
     if(a+(a+10+20)+((a+10)/2)+((a+10)*2)==370){
         document.write(a)
-        document.write("<br>")
     }
 }
  ```
@@ -30,7 +28,6 @@ for(let b=500;b>=1;b--){
     }
 }
 document.write(c)
-document.write("<br>")
  ```
  > 第四题  
  两个自然数X，Y相除，商3余10，被除数、除数、商、余数的和是163，求被除数、除数。(115,35) 
@@ -199,14 +196,12 @@ document.write(num)
  ```
  let n
 n=prompt("请输入一个1到9的数字") 
-
 for(let i=0;i<=n;i++){
     for(let j=n-i;j>0;j--){
         document.write("&nbsp")
     }
     for(let a=0;a<(2*i-1);a++){
         document.write("*")
-  
     }
     document.write("<br>")
 }
@@ -216,7 +211,6 @@ for(let i=0;i<=n;i++){
 ```
 let n
 n=prompt("请输入一个1到9的数字") 
-
 for(let i=0;i<=2*n-1;i++){
     if(i<=n){
         for(let j=n-i;j>0;j--){
@@ -227,14 +221,12 @@ for(let i=0;i<=2*n-1;i++){
       
         }
         document.write("<br>")
-
     }
     else{
         
         document.write("&nbsp")    
         for(let a=0;a<(i-2*(i-n))*2-1;a++){
             document.write("*")
-      
         }
         document.write("<br>")
 
@@ -246,7 +238,6 @@ for(let i=0;i<=2*n-1;i++){
 ```
 let n
 n=prompt("请输入一个1到9的数字") 
-
 for(let i=0;i<=2*n-1;i++){
     if(i<=n){
         for(let j=n-i;j>0;j--){
@@ -264,7 +255,6 @@ for(let i=0;i<=2*n-1;i++){
 
     }
     else{
-        
         document.write("&nbsp")    
         for(let a=0;a<(i-2*(i-n))*2-1;a++){
             if(a==0||a==(i-2*(i-n))*2-2){
@@ -273,10 +263,8 @@ for(let i=0;i<=2*n-1;i++){
             else{
                 document.write("&nbsp") 
             }
-      
         }
         document.write("<br>")
-
     }
 }
 ```
