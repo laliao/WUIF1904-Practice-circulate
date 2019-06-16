@@ -143,7 +143,7 @@
 // }
 // function deepCopy(obj){
 //     let newObj=null;
-//     if(typeof obj==="object" && typeof obj!=="null"){
+//     if(typeof obj==="object" && obj!=="null"){
 //         newObj=obj instanceof Array?[]:{}
 //         for(let i in obj){
 //             newObj[i]=deepCopy(obj[i])
