@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+body{
+    user-select: none;
+}
+.content{
+    height:auto;
+    width:800px;
+    margin:0 auto;
+}
+.content .box{
+    height:700px;
+    width:100%;
+    margin-bottom:50px;
+    color:#fff;
+    background:red;
+    font-size:60px;
+    text-align:center;
+    line-height:450px;
+}
+.btnc{
+    position:fixed;
+    left:30px;
+    bottom:80px;
+    height:250px;
+    width:80px;
+    /* transition: all 0.5s linear; */
+    display:block;  /*动画，是显示后缓慢展示出大小*/
+    overflow: hidden;/*内容一直存在，刚开始大小比较小，超出隐藏*/
+}
+.btnc .btn{
+    height:50px;
+    width:100%;
+    background:blue;
+    color:#fff;
+    font-size:24px;
+    text-align:center;
+    line-height:50px;
+}
+.btnc .btn:nth-child(2n+1){
+    background:#ccc;
+}
+.btnc .hot{
+    background:green !important;
+}
+.back{
+    height:80px;
+    width:80px;
+    background:blue;
+    text-align:center;
+    font-size:24px;
+    padding:2px 10px 0;
+    position:fixed;
+    right:100px;
+    bottom:100px;
+    color:#fff;
+    box-sizing:border-box;
+    /* display:none; */
+
+}

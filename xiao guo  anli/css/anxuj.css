@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body{
+background:#ccc;
+}
+.imgbox{
+    width:1000px;
+    height:auto;
+    margin:0 auto
+}
+.imgbox .image{
+    width:180px;
+    margin:10px 20px 0;
+    float:left;
+}
+.imgbox .image img{
+    width:180px;
+    height:auto;
+}

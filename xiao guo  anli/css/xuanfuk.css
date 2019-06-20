@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.xfbox{
+    height:100px;
+    width:100px;
+    background-color:blue;
+    opacity:0.8;
+    box-shadow:0 0 20px rgba(0,0,0,0.3); 
+    position:fixed;    /*注意定位*/
+}
