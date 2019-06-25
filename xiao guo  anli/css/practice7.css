@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+/*倒计时*/
+body{
+    background:rgba(0,0,0,0.6)
+}
+.bigbox{
+    height:500px;
+    width:100%;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+.text{
+    height:100px;
+    width:100%;
+    text-align: center;
+    color:#fff;
+    font-size:60px;
+    line-height:100px;
+    margin-bottom:100px;
+}
+.shi{
+    height:250px;
+    width:50%;
+    display:flex;
+    justify-content: space-between;
+    color:#fff;
+    font-size:50px;
+    margin:0 auto;
+}
+/*电子表*/

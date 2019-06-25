@@ -25,11 +25,14 @@ body{
     position:fixed;
     left:30px;
     bottom:80px;
-    height:250px;
-    width:80px;
-    /* transition: all 0.5s linear; */
-    display:block;  /*动画，是显示后缓慢展示出大小*/
+    /* height:250px;
+    width:80px; */
+    height:0px;
+    width:0px;
+    display:none;  
     overflow: hidden;/*内容一直存在，刚开始大小比较小，超出隐藏*/
+    transition:all .5s linear;  /*动画，是显示后缓慢展示出大小*/
+
 }
 .btnc .btn{
     height:50px;
@@ -58,6 +61,6 @@ body{
     bottom:100px;
     color:#fff;
     box-sizing:border-box;
-    /* display:none; */
+    display:none;
 
 }

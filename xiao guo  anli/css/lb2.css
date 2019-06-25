@@ -1,0 +1,64 @@
+.bigbox{
+    width:1226px;
+    height:460px;
+    position: relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    background: blue;
+    overflow: hidden;
+}
+.imgbox{
+    height:100%;
+    width:100%;
+}
+.imgbox .image{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0px;
+    opacity:0;
+    transition:0.5s linear;  /*动画过程时间*/
+}
+.imgbox .image img{
+    height:460px;
+    width:auto;
+}
+.dian{
+    height:10px;
+    width:100px;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:35px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+}
+.dian .dianl{
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    background:rgba(0,0,0,0.6);
+}
+.dian  .hot{
+    background:rgba(255,255,255,0.9);
+}
+.jian .jiant{
+height:70px;
+width:40px;
+background-color:rgba(0,0,0,0.5);
+position:absolute;
+top:0;
+bottom:0;
+margin:auto;
+}
+.jian .jiant.left{
+    left:0;
+}
+.jian .jiant.right{   /*交叉选择器*/
+    right:0;
+}

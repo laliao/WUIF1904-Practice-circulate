@@ -14,17 +14,20 @@ let back=document.querySelector(".back")
 let arr=[]     //存储每个box距离页面的高度
 conlist.forEach((v)=>{arr.push(v.offsetTop)})
 let timer=null   //定义一个全局的时间函数
+let xians=null  //定义一个左侧导航显示的函数
 let scrollt   //定义存储滚动的位置
+let wscroT  //定义存储文档滚动的量
 btnlist[0].classList.add("hot")
 btnlist.forEach((v,i)=>{
 
     v.onclick=function(){
-        // conlist.forEach((a,b)=>{btnlist[b].classList.remove("hot")})
-        // v.classList.add("hot")
-        // btnlist[i].classList.add("hot")
+        conlist.forEach((a,b)=>{btnlist[b].classList.remove("hot")})
+        v.classList.add("hot")
+        btnlist[i].classList.add("hot")
         clearInterval(timer)
+        scrollt=document.documentElement.scrollTop 
         timer=setInterval(()=>{
-            scrollt=document.documentElement.scrollTop    //现有位置
+            // scrollt=document.documentElement.scrollTop    //现有位置
             let speed=(arr[i]-document.documentElement.scrollTop)/10     //arr[i]目标位置
             speed=speed>0?Math.ceil(speed):Math.floor(speed)
             scrollt+=speed
@@ -40,35 +43,27 @@ window.onwheel=()=>{clearInterval(timer)}
 
 
 
-// window.onscroll=()=>{
-//     let scrollT=window.scrollY;
-//     if(scrollT>=500){
-//         clearInterval(timer)
-//         btnc.style.display="block"
-//         back.style.display="block"
-//         timer=setInterval(()=>{
-//             btnc.style.height="250px"
-//             btnc.style.width="80px"
-//         },20)
-//     }
-//     if(scrollT<500){  
-//         timer=setInterval(()=>{
-//             btnc.style.height="0px"
-//             btnc.style.width="0px"
-//         },20)
-//         // btnc.style.height="0px"
-//         // btnc.style.width="0px"
-//         back.style.display="none" 
-//     }
-//     btnlist.forEach((v,i)=>{
-//         if(scrollT>=arr[i]){
-//             conlist.forEach((a,b)=>{btnlist[b].classList.remove("hot")})
-//             v.classList.add("hot")
-//         }
-//     }) 
-// }
+window.onscroll=()=>{
+    wscroT=window.scrollY
+    btnlist.forEach((v,i)=>{
+        if(wscroT>=arr[i]){
+            conlist.forEach((a,b)=>{btnlist[b].classList.remove("hot")})
+            v.classList.add("hot")
+        }
+    })
+    if(wscroT>=500){ 
+        back.style.display="block"
+        btnc.style.display="block"
+        btnc.style.height="250px"
+        btnc.style.width="80px"
+    }
+    if(wscroT<500){
 
-
+        back.style.display="none"
+        btnc.style.width=0;
+        btnc.style.height=0;
+    }
+}
 
 
 back.onclick=()=>{
