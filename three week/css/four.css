@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.box {
+    width: 600px;
+    height: auto;
+    margin: 50px auto;
+}
+
+.box .image {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.boxw {
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
+}
+
+.section {
+    text-align: center;
+    font-size: 50px;
+    background: blue;
+}
+
+.swiper-container {
+    height: 300px;
+    width: 600px;
+    margin: 50px auto;
+}
+
+.swiper-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.a {
+    background: #000
+}
+
+.b {
+    background: #ff6700
+}
+
+.c {
+    background: #ff44ff
+}
+
+#boxb {
+    height: 500px;
+    width: 600px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#boxb .boxu {
+    height: auto;
+    width: 100%;
+}
+
+#boxb .boxu>li {
+    height: 80px;
+    width: 100%;
+    background: red;
+}
+
+#boxb .boxu>li:nth-child(2n+1) {
+    background: #ff6700;
+}
